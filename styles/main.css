@@ -153,7 +153,7 @@ body {
 
 .whiteSpace{
   width: 100%;
-  height: 300px;
+  height: 125px;
   background: white;
   position: absolute;
   z-index: 2;
@@ -167,12 +167,15 @@ body {
     display: flex;
     flex-direction:row;
 }
+
 .gameContainer > .leftPartContainer{
     flex:1;
 }
+
 .gameContainer > .rightPartContainer{
     flex:1;
 }
+
 .rightPartContainer > .title{
     width:80%;
     height:20%;
@@ -180,6 +183,7 @@ body {
     margin-top:20%;
     display: block;
 }
+
 .phoneBackground{
     width:60%;
     background: white;
@@ -188,32 +192,39 @@ body {
     margin-top:23%;
     box-shadow: 1px 1px 60px #888888;
 }
+
 .phoneBackground > #statusBar{
     margin: 10px;
 }
+
 .innerUI > h1{
     font-size:25px;
     color: #FD4D3A;
     font-weight: 500;
     margin-top:10%;
 }
+
 .innerUI{
     width:85%;
     display: block;
     margin:auto;
 }
+
 .listContainer{
     display: flex;
     width:100%;
     flex-direction:row;
     margin-top:10%;
 }
+
 .checkListContainer{
     flex:1;
 }
+
 .todosContainer{
     flex:5;
 }
+
 .todo01unchecked{
     font-size:20px;
     margin:0px;
@@ -222,6 +233,7 @@ body {
     margin-top: 2%;
     margin-bottom:20%;
 }
+
 .todo01checked{
     font-size:20px;
     margin:0px;
@@ -231,6 +243,7 @@ body {
     margin-bottom:20%;
     text-decoration: line-through;
 }
+
 #outerCircle01, #outerCircle02, #outerCircle03 {
     margin-bottom:80%;
     height: 35px;
@@ -241,19 +254,18 @@ body {
     align-items: center;
     display: flex;
 }
+
 .check01 {
     position: absolute;
     height: 20px;
     width: 20px;
     margin-left:20%;
 }
+
 .hide{
     width:0px;
     height:0px;
 }
-
-
-
 
 .experienceContainer{
   margin-top: 10%;
@@ -262,6 +274,7 @@ body {
   height: 200%;
   padding: 5%;
 }
+
 .experience01Container{
   width: 90%;
   height: 50%;
@@ -269,24 +282,29 @@ body {
   display: flex;
   flex-direction: row;
 }
+
 .experience01words{
   flex: 5;
   display: flex;
   flex-direction: column;
 }
+
 .experience01phone{
   flex: 2;
 }
+
 .experience01title{
   flex:3;
   display: flex;
   flex-direction: row;
 }
+
 .experience01content{
   flex:5;
   display: flex;
   flex-direction: row;
 }
+
 .titleBox{
   max-height:100px;
   max-width: 100px;
@@ -295,41 +313,49 @@ body {
   justify-content: center;
   flex:2;
 }
+
 .titleBox > h1{
   font-size: 40px;
   color: white;
   margin: 0px;
   padding: 25%;
 }
+
 .titleContent{
   flex:10;
   padding-left: 2%;
   padding-top: 0px;
 }
+
 .titleContent > h1{
   padding: 0px;
   margin: 0px;
   margin-top: 1%;
   color:#7B7B7B;
 }
+
 .biggerText{
   font-size: 50px;
   color: #FD4D3A;
 }
+
 .experience01icon{
   flex:2;
 }
+
 .experience01icon > img{
   width: 20%;
   display: block;
   margin-left:70%;
   margin-bottom: 30%;
 }
+
 .experience01discript{
   flex:5;
   display: flex;
   flex-direction:row;
 }
+
 .questions > h1{
   font-size: 25px;
   color: #535252;
@@ -338,27 +364,33 @@ body {
   padding-top: 5px;
   margin-top:0px;
 }
+
 .questions :nth-child(2){
   margin-bottom: 25%;
 }
+
 .questions{
   flex:5;
 }
+
 .lines{
   flex:3;
   padding-top: 2%;
 
 }
+
 .lines > hr{
   color: #95989A;
   width: 250px;
   margin-bottom: 45%;
 }
+
 .experience01phone > img{
   width:70%;
   margin-left: 10%;
   padding-top: 35%;
 }
+
 .quote{
   width:85%;
   margin-top: 10%;
@@ -366,44 +398,54 @@ body {
   margin-right: auto;
   text-align: center;
 }
+
 .quote > h1{
 font-family: 'adobe-garamond-pro';
 font-weight: lighter;
 font-style: italic;
 font-size:45px;
 }
+
 .quote :nth-child(2){
   margin:auto;
   font-size: 20px;
 }
+
 .experience02Container{
   margin-top: 10%;
 }
+
 .experience02Container{
   width:90%;
   margin:auto;
   margin-top: 15%;
 }
+
 .biggerTextGray{
   font-size: 50px;
   color: #7B7B7B;
 }
+
 .experience01title > .titleContent > h1{
   margin:0px;
 }
+
 .experience01title > .titleBox{
   margin-top: 1.5%;
 }
+
 .experience02first{
   width: 100%;
   height:250px;
   margin-top: 20%;
 }
+
 .experience02first > h1{
   text-align: center;
   font-size: 35px;
   color: #767676;
 }
+
 .experience02first > img{
   width:40%;
   margin-left:auto;
@@ -411,15 +453,18 @@ font-size:45px;
   display: block;
   margin-top: 5%;
 }
+
 .experience02first :nth-child(3){
   color: #FD4D3A;
   font-size: 20px;
 }
+
 .experience02second > h1{
   text-align: center;
   font-size: 35px;
   color: #767676;
 }
+
 .experience02secondIconContainer{
   width:70%;
   height: 200px;
@@ -427,25 +472,252 @@ font-size:45px;
   flex-direction: row;
   margin: auto;
 }
+
 .experience02secondIconContainer > div > h1{
   color: #3B3B3B;
   font-size:25px;
 }
+
 .article{
   flex:1;
   text-align: center;
 }
+
 .video{
   flex:1;
   text-align: center;
 }
+
 .money{
   flex:1;
   text-align: center;
 }
+
 .experience02secondIconContainer > div > img{
   width: 25%;
   margin:auto;
   display: block;
 }
 
+.orange_text{
+  text-align: center;
+  color: #FD4D3A;
+}
+
+.grey_text{
+  text-align: center;
+  color: #3B3B3B;
+}
+
+.platform_icon_container{
+  width:70%;
+  height: 200px;
+  display: flex;
+  padding-top: 5%;
+  flex-direction: row;
+  margin: auto;
+}
+
+.platform_icon_container > div > img{
+  width: 30%;
+  margin:auto;
+  display: block;
+  height: 20%;
+}
+
+.CNN{
+  flex:1;
+}
+
+.TC{
+  flex:1;
+}
+
+.TED{
+  flex:1;
+}
+
+.Youtube{
+  flex:1;
+  border: 0;
+  margin: 0;
+}
+
+.coming_soon{
+  width: 10rem;
+  border-radius: 100px;
+  border: solid 1px #FD4D3A;
+  padding: 10px;
+  text-align: center;
+  margin: 0 auto;
+  color: #FD4D3A;
+}
+
+.coming_features_container{
+  width:70%;
+  height: 200px;
+  display: flex;
+  padding-top: 5%;
+  flex-direction: row;
+  margin: auto;
+}
+
+.coming_features_container > div > img{
+  margin: auto;
+  display: block;
+  width: 50%;
+}
+
+.Friday_night{
+  flex:1;
+  text-align: center;
+}
+
+.Friday_night > h3{
+  position: relative;
+  top: -0.7px;
+  color: #411840;
+}
+
+.Holiday_special{
+  flex:1;
+  text-align: center;
+  padding-top: 2%;
+  padding-bottom: 4%;
+  color: #C13341;
+}
+
+.Holiday_special > h3{
+  position: relative;
+  top: 5px;
+}
+
+.feature_explain_container{
+  margin-top: 10%;
+  background: #272727;
+  width: 100%;
+  height: 200%;
+  padding: 5%;
+}
+
+.date_picker{
+  text-align: center;
+  margin: 10% auto;
+}
+
+.date_picker > img{
+  width: 15%;
+}
+
+.date_picker > h1{
+  padding-top: 5%;
+  color: #E8E8E8;
+  letter-spacing: 1px;
+}
+
+.date_picker > p{
+  padding-top: 2%;
+  color: #E8E8E8;
+}
+
+.music{
+  text-align: center;
+  margin: 10% auto;
+}
+
+.music > img{
+  width: 7%;
+}
+
+.music > h1{
+  padding-top: 5%;
+  color: #E8E8E8;
+  letter-spacing: 1px;
+}
+
+.music > p{
+  padding-top: 2%;
+  color: #E8E8E8;
+}
+
+.everyday{
+  text-align: center;
+  margin: 10% auto;
+}
+
+.everyday > img{
+  width: 40%;
+}
+
+.everyday > h1{
+  padding-top: 5%;
+  color: #E8E8E8;
+  letter-spacing: 1px;
+}
+
+.everyday > p{
+  padding-top: 2%;
+  color: #E8E8E8;
+}
+
+.product_name{
+  letter-spacing: 1.5px;
+  font-weight: 50;
+}
+
+.enterEmail_below{
+  width: 100%;
+  height: 200%;
+  padding: 5%;
+  display: block;
+  background-color:  #FAFAFA;
+}
+
+input.placeholder{
+  text-align: center;
+}
+
+.getEarlyAccess_below {
+  font-size: 25px;
+  font-weight: lighter;
+  text-align: center;
+}
+
+.footer{
+  background-color: #272727;
+  color: #95989A;
+  text-align: center;
+  padding: 3%;
+}
+
+.set_to_center {
+  display: block;
+  text-align: center;
+}
+
+#subscribeBtn {
+  padding: 10px;
+  height: 50px;
+  width:200px;
+  border-radius: 100px;
+  border: 2px solid #FD4D3A;
+  background-color: transparent;
+  font-size: 13px;
+  vertical-align: middle;
+  color: #FD4D3A;
+  letter-spacing: 1.7px;
+  outline : none;
+  transition: 0.2s ease-in-out;
+  margin-top: 2%;
+  z-index: 10;
+}
+
+#subscribeBtn:hover{
+  transform: scale(1.05);
+  background-color: #FD4D3A;
+  color: #FD4D3A;
+  border: 2px solid #FD4D3A;
+  font-size: 13.5px;
+  color: white;
+  box-shadow: 1px 1px 10px #888888;
+}

@@ -7,11 +7,11 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
   <link rel="stylesheet" href="styles/main.css">
-  <link rel="icon" type="image/svg+xml" href="./src/LOGO.svg">
+  <link rel="icon" href="./src/logo.png">
   <link rel="stylesheet" href="bower_components/aos/dist/aos.css" />
-<link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">  <title>DOO</title>
-
-
+  <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+  <link rel="icon" href="./src/favicon.png">
+  <title>today</title>
 </head>
 
 <body>
@@ -22,15 +22,17 @@
   </script>
 
   <div class="wrapper-full">
-    <div class="logoContainer"><img src="./src/logo.png" class="logo" alt="it's our logo"></div>
+    <div class="logoContainer">
+      <img src="./src/logo.png" class="logo" alt="it's our logo">
+    </div>
     <div class="site-navContainer">
       <div class="site-nav">
-        <a href="#"> ABOUT</a>
-        <a href="#"> CONTACT </a>
+        <a href="#" title = "about us"> ABOUT</a>
+        <a href="mailto:cjjm2014@gmail.com" title = "contact us by email"> CONTACT </a>
       </div>
       <div class="language">
-      <a href="#" > EN </a>
-      <a href="#" > 中文 </a>
+        <!-- <a href="#" > EN </a> -->
+        <a href="#" title = "chinese"> 中文 </a>
       </div>
     </div>
   </div>
@@ -38,14 +40,16 @@
   <div class="pageHeader">
     <div class="pageHeaderContent">
       <div class="headerPhoneContainer"><img src="./src/phone.svg" class="headerPhone" alt="a phone running our app"></div>
-      <div class="headerContentText">
-        <h1 class="slogan">YOUR SPARE TIME <br>HAS NEVER BEEN </br>SO REWARDING</h1>
-        <div class="enterEmail">
-          <a class="getEarlyAccess">Get early access <br></br></a>
-          <input class="emailInput" type="email" placeholder="you@email.com" autocorrect="off" autocapitalize="off">
-          <br></br><input id="submitBtn" type="submit" value="SUBMIT">
+        <div class="headerContentText">
+          <h1 class="slogan">YOUR SPARE TIME <br>HAS NEVER BEEN </br>SO REWARDING</h1>
+          <div class="enterEmail">
+            <a class="getEarlyAccess">Get early access <br></br></a>
+            <form action="#" method = "post">
+              <input class="emailInput" type="email" placeholder="you@email.com" autocorrect="off" autocapitalize="off" required="true">
+              <br></br><input id="submitBtn" type="submit" value="SUBMIT">
+            </form>
+          </div>
         </div>
-      </div>
       </h1>
     </div>
   </div>
@@ -54,7 +58,6 @@
   </div>
 
   <div class="gameContainer">
-
     <div class="leftPartContainer">
       <div class="phoneBackground">
         <img id="statusBar" src="./src/statusBar.svg"/>
@@ -87,7 +90,6 @@
         <h1>LISTEN TO YOUR EVERYDAY BEATS</h1>
       </div>
     </div>
-
   </div>
 
   <div class="experienceContainer">
@@ -108,11 +110,11 @@
             <img src="./src/place.svg" alt="place icon"/>
           </div>
           <div class="experience01discript">
-            <div class="questions">
-              <h1>how long do you need?</h1>
-              <h1>when is the deadline?</h1>
-              <h1>do you have to do it at<br> a certain place?</br></h1>
-            </div>
+              <div class="questions">
+                <h1>how long do you need?</h1>
+                <h1>when is the deadline?</h1>
+                <h1>do you have to do it at<br> a certain place?</br></h1>
+              </div>
 
             <div class="lines">
               <hr>
@@ -166,10 +168,74 @@
         </div>
       </div>
     </div>
+    <div class = "platform_container">
+      <h1 class = "orange_text">Providing right amout of content</h1>
+      <h1 class = "grey_text">from existing platforms.</h1>
+      <div class = "platform_icon_container">
+        <div class = "CNN">
+          <img src = "./src/CNN_icon.png" alt="platform CNN icon">
+        </div>
 
+        <div class ="TC">
+          <img src ="./src/TC_icon.png" alt="platform TC icon">
+        </div>
+        <div class = "TED">
+          <img src = "./src/TED_icon.png" alt="platform TED icon">
+        </div>
+        <div class = "Youtube">
+          <img src = "./src/YouTube_icon.png" alt="platform Youtube icon">
+        </div>
+      </div>
+    </div>
+
+    <div class = "coming_soon">
+      coming soon
+    </div>
+
+    <div class = "coming_features_container">
+      <div class = "Friday_night">
+        <img src = "./src/fridayicon.svg" alt="Friday night icon">
+        <h3>FRIDAYS ONLY</h3>
+      </div>
+      <div class = "Holiday_special">
+        <img src = "./src/holidayIcon.svg" alt="Holiday special icon">
+        <h3>HOLIDAY SPECIALS</h3>
+      </div>
+    </div>
   </div>
 
-  <script src="./scripts/main.js"></script>
-</body>
+  <div class = "feature_explain_container">
+    <div class = "date_picker">
+      <img src = "./src/datePickerIcon.svg" alt="date picker icon">
+      <h1> REINVENTING THE DATE PICKER <br /> AND EVERYTHING </h1>
+      <p> Putting down reminders is never this easy. </p>
+    </div>
+    <div class = "music">
+      <img src = "./src/musicIcon.svg" alt="music icon">
+      <h1> LISTEN TO YOUR DAILY ACHIEVEMENTS </h1>
+      <p>待填</p>
+    </div>
+    <div class = "everyday">
+      <img src = "./src/everydayIcon.svg" alt="everyday icon">
+      <h1> STICK TO YOUR EVERYDAY PRACTICE </h1>
+      <p> <span class = "product_name">today</span> keeps track of your long term goals and reminds you to keep practicing. </p>
+    </div>
+  </div>
 
-</html>
+  <div class="enterEmail_below">
+    <div class="getEarlyAccess_below"> <p>Get early access <br></br> </div>
+    <form action="#" class = "set_to_center" method = "post">
+      <input class="emailInput" type="email" placeholder="you@email.com" autocorrect="off" autocapitalize="off" required="true" style="text-align: center">
+      <br>
+      <input id="subscribeBtn" type="submit" value="SUBSCRIBE">
+    </form>
+  </div>
+
+  <div class = "footer"><footer><span class = "product_name">today</span> APP Inc.2017</footer></div>
+
+  <script src="./scripts/main.js">
+
+  </script>
+  </body>
+
+  </html>
