@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="icon" type="image/svg+xml" href="./src/LOGO.svg">
+  <link rel="stylesheet" href="bower_components/aos/dist/aos.css" />
+<link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">  <title>DOO</title>
+
+
+</head>
+
+<body>
+  <script src="bower_components/aos/dist/aos.js"></script>
+  <script>
+  AOS.init({
+  });
+  </script>
+
+  <div class="wrapper-full">
+    <div class="logoContainer"><img src="./src/LOGO.svg" class="logo" alt="it's our logo"></div>
+    <div class="site-navContainer">
+      <div class="site-nav">
+        <a href="#"> ABOUT</a>
+        <a href="#"> CONTACT </a>
+      </div>
+      <div class="language">
+      <a href="#" > EN </a>
+      <a href="#" > 中文 </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="pageHeader">
+    <div class="pageHeaderContent">
+      <div class="headerPhoneContainer"><img src="./src/phone.svg" class="headerPhone" alt="a phone running our app"></div>
+      <div class="headerContentText">
+        <h1 class="slogan">YOUR SPARE TIME <br>HAS NEVER BEEN </br>SO REWARDING</h1>
+        <div class="enterEmail">
+          <a class="getEarlyAccess">Get early access <br></br></a>
+          <input class="emailInput" type="email" placeholder="you@email.com" autocorrect="off" autocapitalize="off">
+          <br></br><input id="submitBtn" type="submit" value="SUBMIT">
+        </div>
+      </div>
+      </h1>
+    </div>
+  </div>
+
+  <div class="whiteSpace">
+  </div>
+
+  <div class="gameContainer">
+
+    <div class="leftPartContainer">
+      <div class="phoneBackground">
+        <img id="statusBar" src="./src/statusBar.svg"/>
+        <div class="innerUI">
+          <h1>MY TODO  LIST</h1>
+          <div class="listContainer">
+            <div class="checkListContainer">
+              <div id="outerCircle01" data-circle="check01Id" data-todo="todo01Id">
+                <img id="check01Id" class="hide" src="./src/check.svg" />
+              </div>
+              <div id="outerCircle02" data-circle="check02Id" data-todo="todo02Id">
+                <img id="check02Id" class="hide" src="./src/check.svg" />
+              </div>
+              <div id="outerCircle03" data-circle="check03Id" data-todo="todo03Id">
+                <img id="check03Id" class="hide" src="./src/check.svg" />
+              </div>
+            </div>
+            <div class="todosContainer">
+              <h2 id="todo01Id" class="todo01unchecked">make a reservation for dinner</h2>
+              <h2 id="todo02Id" class="todo01unchecked">email my boss</h2>
+              <h2 id="todo03Id" class="todo01unchecked">study TOEFL</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="rightPartContainer">
+      <div class="title">
+        <h1>LISTEN TO YOUR EVERYDAY BEATS</h1>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="experienceContainer">
+    <div class="experience01Container">
+      <div class="experience01words">
+        <div class="experience01title">
+          <div class="titleBox">
+            <h1>01</h1>
+          </div>
+          <div class="titleContent">
+            <h1>GET SMALL THINGS <br><span class="biggerText">DONE</span></br></h1>
+          </div>
+        </div>
+        <div class="experience01content">
+          <div class="experience01icon">
+            <img src="./src/clock.svg"/ alt="clock icon">
+            <img src="./src/calender.svg" alt="calender icon"/>
+            <img src="./src/place.svg" alt="place icon"/>
+          </div>
+          <div class="experience01discript">
+            <div class="questions">
+              <h1>how long do you need?</h1>
+              <h1>when is the deadline?</h1>
+              <h1>do you have to do it at<br> a certain place?</br></h1>
+            </div>
+
+            <div class="lines">
+              <hr>
+              <hr>
+              <hr>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="experience01phone">
+        <img src="./src/UI01.png"/ alt="create event user interface">
+      </div>
+    </div>
+
+    <div class="quote">
+      <h1>“At any point in time, knowing what has to get done,
+            and when, creates a terrain for maneuvering.” </h1>
+      <h1>~David Allen</h1>
+    </div>
+
+    <div class="experience02Container">
+      <div class="experience01title">
+        <div class="titleBox">
+          <h1>02</h1>
+        </div>
+        <div class="titleContent">
+          <h1>STOP  <span class="biggerTextGray"> SWIPING</span> <br>START<span class="biggerText"> LEARNING</span></br></h1>
+        </div>
+      </div>
+      <div class="experience02first">
+        <h1>How long do you have?</h1>
+        <img src="./src/timeChoice.svg"/>
+        <h1>minutes</h1>
+      </div>
+
+      <div class="experience02second">
+        <h1>Feel like doing?</h1>
+        <div class="experience02secondIconContainer">
+          <div class="article">
+            <img src="./src/articleIcon.svg" alt="article icon">
+            <h1>reading<br>articles</br></h1>
+          </div>
+          <div class="video">
+            <img src="./src/videoIcon.svg" alt="article icon">
+            <h1>watching<br>videos</br></h1>
+          </div>
+          <div class="money">
+            <img src="./src/moneyIcon.svg" alt="article icon">
+            <h1>earning<br>money</br></h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="./scripts/main.js">
+
+  </script>
+</body>
+
+</html>
