@@ -24,3 +24,18 @@ function toggle () {
     }
 }
 
+var newnode = document.getElementById('nav_experience_design').cloneNode(true);
+var oldnode = document.getElementById('nav_about_contact');
+
+window.onscroll = function(){
+    var t = document.documentElement.scrollTop || document.body.scrollTop;
+    if( t > 0 ) {
+        document.getElementById('nav_experience_design').className = 'experience_and_design_after';
+        newnode.className = 'experience_and_design_after_replace';
+        document.getElementById("wrapper").replaceChild(newnode,oldnode);
+    } 
+    else {
+        document.getElementById("wrapper").replaceChild(oldnode,newnode);
+        document.getElementById('nav_experience_design').className = 'experience_and_design';
+    }       
+}
