@@ -23,7 +23,7 @@
 
   <div class="wrapper-full" id = "wrapper">
     <div class="logoContainer">
-      <a href="#" title="today"><img src="./src/logo.png" class="logo" alt="it's our logo"></a>
+      <a href="#top_link" title="today" id = "go_to_top"><img src="./src/logo.png" class="logo" alt="it's our logo"></a>
     </div>
     <div class="site-navContainer" id = "nav_about_contact">
       <div class="site-nav">
@@ -35,13 +35,16 @@
       </div>
     </div>
   </div>
-  <br><br><br><br><br><br><br>
+  <!-- <br><br><br><br> -->
+  <a name = "top_link"></a>
+  <div class = "blank_space">
+  </div>
   <div class = "experience_and_design" id = "nav_experience_design">
     <div class = "experience_container">
-      <a href="#experience_link" title = "jump to experience"> EXPERIENCE</a>
+      <a href="#experience_link" title = "jump to experience" id = "jump_to_experience"> EXPERIENCE</a>
     </div>
     <div class = "design_container">
-      <a href="#design_link" title = "jump to design"> DESIGN </a>
+      <a href="#design_link" title = "jump to design"  id = "jump_to_design"> DESIGN </a>
     </div>
   </div>
 
@@ -99,9 +102,34 @@
       <div class="title">
         <h1>LISTEN TO YOUR EVERYDAY BEATS</h1>
       </div>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur
+        adipiscing elit. Sed sagittis feugiat nunc,
+        ut imperdiet lorem scelerisque vel. Sed
+        sagittis luctus egestas. Etiam ultrices ligula
+        Lorem ipsum dolor sit amet, consectetur
+        adipiscing elit. Sed sagittis feugiat nunc,
+        ut imperdiet lorem scelerisque vel. Sed
+        sagittis luctus egestas. Etiam ultrices ligula
+      </p>
+      <div class = "instrument_icon_container">
+        <div class = "piano">
+          <img src = "./src/blank_piano_icon.png" alt="piano icon" id = "piano_img">
+        </div>
+        <div class = "drum">
+          <img src = "./src/blank_drum_icon.png" alt="drum icon" id = "drum_img">
+        </div>
+        <div class = "guitar">
+          <img src = "./src/blank_guitar_icon.png" alt="guitar icon" id = "guitar_img">
+        </div>
+        <div class = "music_play_button">
+          <img  src = "./src/play_music.png" alt = "play music button" id = "play_music" onclick = "play()">
+          <audio id="audio" src="./src/MIX1.mp3" hidden="true"></audio>
+        </div>
+      </div>
     </div>
   </div>
-  <a name="experience_link"></a>
+  <a name="experience_link" id = "experience_link"></a>
   <div class="experienceContainer">
     <div class="experience01Container">
       <div class="experience01words">
@@ -205,7 +233,7 @@
         <h3>HOLIDAY SPECIALS</h3>
       </div>
     </div>
-    <a name = "design_link"></a>
+    <a name = "design_link" id = "design_link"></a>
   </div>
 
   <div class = "feature_explain_container">
@@ -238,7 +266,8 @@
   <div class = "footer"><footer><span class = "product_name">today</span> APP Inc.2017</footer></div>
 
   <script src="./scripts/main.js"></script>
-
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </body>
 
   </html>
