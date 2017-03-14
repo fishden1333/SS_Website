@@ -485,26 +485,27 @@ body {
 }
 
 @media only screen and (max-width: 800px) {
-  .experience01Container{
+  .experience01Container {
     width: 100%;
     height: 50%;
     margin: auto;
     display: block;
   }
 
-  .experience01words{
+  .experience01words {
     width: 100%;
     display: block;
 }
 
-  .experience01phone{
-    width: 100%;
-    display: block;
+  .experience01phone {
+    height: 100%;
+    display: flex;
   }
 
-  .experience01phone > img{
+  .experience01phone > img {
     max-width: 500px;
-    margin: auto
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
