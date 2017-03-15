@@ -92,22 +92,26 @@ function play(){
         audio.src = './src/MIX1.mp3';
         audio.play();
         play_count = 0;
+        document.getElementById("play_music").src = './src/pause_music_icon.png';
     }
     else if(count == 2 && play_count == 1){
         var audio = document.getElementById("audio");
         audio.src = './src/MIX2.mp3';
         audio.play();
         play_count = 0;
+        document.getElementById("play_music").src = './src/pause_music_icon.png';
     }
     else if(count == 3 && play_count == 1){
         var audio = document.getElementById("audio");
         audio.src = './src/MIX3.mp3';
         audio.play();
         play_count = 0;
+        document.getElementById("play_music").src = './src/pause_music_icon.png';
     }
     else{
         this.audio.pause();
         play_count = 1;
+        document.getElementById("play_music").src = './src/play_music.png';
     }
 }
 

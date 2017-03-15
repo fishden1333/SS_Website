@@ -226,7 +226,7 @@ html, body {
 }
 
 .headerContentText {
-  flex:2;
+  flex:1.5;
   padding-top: 8%;
 
   /*max-width:700px; 加了會導致background pic 被截更多*/
@@ -242,6 +242,7 @@ html, body {
   font-weight: bolder;
   margin-left: 30%;
   margin-top:10%;
+  text-shadow: 0.2px 0.2px 25px gray;
 }
 
 .enterEmail {
@@ -305,6 +306,20 @@ html, body {
   box-shadow: 1px 1px 10px #888888;
 }
 
+@media only screen and (max-width: 800px) {
+  .slogan {
+    letter-spacing: 3px;
+    font-size: 35px;
+    font-weight: 500;
+    /*color: #454545;*/
+    color: white;
+    text-align: left;
+    font-weight: bolder;
+    margin-top:10%;
+    text-align: center;
+  }
+}
+
 .whiteSpace{
   width: 100%;
   height: 125px;
@@ -355,7 +370,7 @@ html, body {
 }
 
 .instrument_icon_container{
-
+  margin-top: 10%;
 }
 
 .instrument_icon_container > div{
@@ -383,10 +398,15 @@ html, body {
 .music_play_button > img{
   height: 12%;
   width: 12%;
+  transition: 0.2s ease;
+}
+
+#play_music:hover {
+  transform: scale(1.2);
 }
 
 .phoneBackground{
-    width:60%;
+    width:70%;
     background: white;
     height:80%;
     margin-left:20%;
