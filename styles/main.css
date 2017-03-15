@@ -280,22 +280,26 @@ body {
 }
 
 .rightPartContainer > .title{
-    width:90%;
-    height:10%;
-    margin-top:27%;
-    display: block;
-    color: #FD4D3A;
+  width:90%;
+  height:40%;
+  margin-top:27%;
+  display: block;
+  color: #FD4D3A;
+  text-align: center;
 }
 
 .rightPartContainer > .title > h1{
-  font-size: 2rem;
+   font-size: 2rem;
+   height:23%;
 }
 
-.rightPartContainer > p{
+.rightPartContainer > .title > p{
   color: #454545;
   font-size: 1.5rem;
-  word-spacing: 1px;
+  word-spacing: 3px;
   font-weight: lighter;
+  line-height: 40px;
+  text-align: center;
 }
 
 .instrument_icon_container{
@@ -827,7 +831,7 @@ font-size:45px;
 
 .date_picker{
   text-align: center;
-  margin: 10% auto;
+  margin: 20% auto;
 }
 
 .date_picker > img{
@@ -835,19 +839,21 @@ font-size:45px;
 }
 
 .date_picker > h1{
-  padding-top: 5%;
+  padding-top: 3%;
   color: #E8E8E8;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
 }
 
 .date_picker > p{
   padding-top: 2%;
-  color: #E8E8E8;
+  color: #BEBEBE;
+  font-weight: 100;
+  letter-spacing: 0.8px;
 }
 
 .music{
   text-align: center;
-  margin: 10% auto;
+  margin: 20% auto;
 }
 
 .music > img{
@@ -855,19 +861,21 @@ font-size:45px;
 }
 
 .music > h1{
-  padding-top: 5%;
+  padding-top: 3%;
   color: #E8E8E8;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
 }
 
 .music > p{
   padding-top: 2%;
-  color: #E8E8E8;
+  color: #BEBEBE;
+  font-weight: 100;
+  letter-spacing: 0.8px;
 }
 
 .everyday{
   text-align: center;
-  margin: 10% auto;
+  margin: 20% auto;
 }
 
 .everyday > img{
@@ -875,14 +883,16 @@ font-size:45px;
 }
 
 .everyday > h1{
-  padding-top: 5%;
+  padding-top: 3%;
   color: #E8E8E8;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
 }
 
 .everyday > p{
   padding-top: 2%;
-  color: #E8E8E8;
+  color: #BEBEBE;
+  font-weight: 100;
+  letter-spacing: 0.8px;
 }
 
 .product_name{

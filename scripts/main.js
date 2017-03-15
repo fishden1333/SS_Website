@@ -107,3 +107,9 @@ $('#jump_to_design').click(function (){
         return false;
     });
 });
+
+$("#getEarlyAccessButtonId").on('click', function(){
+  $("div").removeClass("emailInputAnimatedHide");
+  $(".dumb").addClass('emailInputAnimated animated fadeInRight');
+  $(this).addClass('animated fadeOut');
+});
