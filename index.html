@@ -8,7 +8,7 @@
 
   <link rel="stylesheet" href="styles/main.css">
   <link rel="stylesheet" href="styles/animate.css">
-  <link rel="stylesheet" href="bower_components/aos/dist/aos.css" />
+  <link rel="stylesheet" href="aos-master/dist/aos.css" />
 
   <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -23,9 +23,13 @@
 </head>
 
 <body>
-  <script src="bower_components/aos/dist/aos.js"></script>
+  <script src="aos-master/dist/aos.js"></script>
   <script>
   AOS.init({
+    offset:200,
+    duration:500,
+    easing:'ease',
+    delay:200,
   });
   </script>
 
@@ -87,9 +91,9 @@
   <div class="whiteSpace">
   </div>
 -->
-  <div class="gameContainer">
-    <div class="leftPartContainer">
-      <div class="phoneBackground">
+  <div class="gameContainer" >
+    <div class="leftPartContainer"  data-aos="fade-up">
+      <div class="phoneBackground" data-aos="fade-up">
         <img id="statusBar" src="./src/statusBar.svg"/>
         <div class="innerUI">
           <h1>MY TODO  LIST</h1>
@@ -115,7 +119,7 @@
       </div>
     </div>
 
-    <div class="rightPartContainer">
+    <div class="rightPartContainer" data-aos="fade-up">
       <div id="fsm" class="title">
         <h1>LET'S TAKE A LOOK</h1>
         <p>
@@ -124,7 +128,7 @@
           “Click on a circle to finish an event.”<br>
         </p>
       </div>
-      <div class = "instrument_icon_container">
+      <div class = "instrument_icon_container" >
         <div class = "piano">
           <img src = "./src/blank_piano_icon.png" alt="piano icon" id = "piano_img">
         </div>
@@ -145,15 +149,15 @@
   <div class="experienceContainer">
     <div class="experience01Container">
       <div class="experience01words">
-        <div class="experience01title">
-          <div class="titleBox">
+        <div class="experience01title" data-aos="fade-right">
+          <div class="titleBox" >
             <h1>01</h1>
           </div>
-          <div class="titleContent">
+          <div class="titleContent" >
             <h1>GET SMALL THINGS <br><span class="biggerText">DONE</span></br></h1>
           </div>
         </div>
-        <div class="experience01content">
+        <div class="experience01content" data-aos="fade-right" data-aos-delay: 200;>
           <div class="experience01icon">
             <img src="./src/clock.svg"/ alt="clock icon">
             <img src="./src/calender.svg" alt="calender icon"/>
@@ -168,7 +172,7 @@
           </div>
         </div>
       </div>
-      <div class="experience01phone">
+      <div class="experience01phone" data-aos="fade-left" data-aos-delay: 200;>
         <img src="./src/UI01.png"/ alt="create event user interface">
       </div>
     </div>
@@ -180,7 +184,7 @@
     </div>
 
     <div class="experience02Container">
-      <div class="experience01title">
+      <div class="experience01title" data-aos="fade-right">
         <div class="titleBox">
           <h1>02</h1>
         </div>
@@ -188,13 +192,13 @@
           <h1>STOP  <span class="biggerTextGray"> SWIPING</span> <br>START<span class="biggerText"> LEARNING</span></br></h1>
         </div>
       </div>
-      <div class="experience02first">
+      <div class="experience02first" data-aos="fade-down">
         <h1>How long do you have?</h1>
         <img src="./src/timeChoice.svg"/>
         <h1>minutes</h1>
       </div>
 
-      <div class="experience02second">
+      <div class="experience02second" data-aos="fade-down">
         <h1>Feel like doing?</h1>
         <div class="experience02secondIconContainer">
           <div class="article">
@@ -212,7 +216,7 @@
         </div>
       </div>
     </div>
-    <div class = "platform_container">
+    <div class = "platform_container" data-aos="fade-down">
       <h1 class = "orange_text">Providing right amout of content</h1>
       <h1 class = "grey_text">from existing platforms.</h1>
       <div class = "platform_icon_container">
@@ -248,22 +252,22 @@
     <a name = "design_link" id = "design_link"></a>
   </div>
 
-  <div class = "feature_explain_container">
-    <div class = "date_picker">
+  <div class = "feature_explain_container" >
+    <div class = "date_picker" data-aos="fade-down" data-aos-offset:100;>
       <img src = "./src/datePickerIcon.svg" alt="date picker icon">
       <h1> REINVENTING THE DATE PICKER <br /> AND EVERYTHING </h1>
       <p>
         Brand new interface makes your operation simpler and faster.<br>Listing is no longer a trouble.
       </p>
     </div>
-    <div class = "music">
+    <div class = "music" >
       <img src = "./src/musicIcon.svg" alt="music icon">
       <h1> LISTEN TO YOUR DAILY ACHIEVEMENTS </h1>
       <p>
         Finish your unfinished tasks.<br>Enjoy daily achievement, and listen to relaxing music.
       </p>
     </div>
-    <div class = "everyday">
+    <div class = "everyday" >
       <img src = "./src/everydayIcon.svg" alt="everyday icon">
       <h1> STICK TO YOUR EVERYDAY PRACTICE </h1>
       <p>
