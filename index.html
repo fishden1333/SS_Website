@@ -8,10 +8,16 @@
 
   <link rel="stylesheet" href="styles/main.css">
   <link rel="stylesheet" href="styles/animate.css">
-  <link rel="icon" href="./src/logo.png">
   <link rel="stylesheet" href="bower_components/aos/dist/aos.css" />
-  <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <link rel="icon" href="./src/logo.png">
   <link rel="icon" href="./src/favicon.png">
+
+  <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+
   <title>today</title>
 </head>
 
@@ -51,18 +57,27 @@
 
 
   <div class="pageHeader">
-    <div class="pageHeaderContent">
-      <!-- <div class="headerPhoneContainer">
-        <img src="./src/phone.svg" class="headerPhone" alt="a phone running our app">
-      </div> -->
+    <div class="headerLeft">
       <div class="headerContentText">
         <h1 class="slogan">YOUR SPARE TIME <br>HAS NEVER BEEN </br>SO REWARDING</h1>
-        <div class="enterEmail">
-          <a class="getEarlyAccess">Get early access <br></br></a>
-          <form action="#" method = "post">
-          <input class="emailInput" type="email" placeholder="you@email.com" autocorrect="off" autocapitalize="off" required="true">
-          <br></br><input id="submitBtn" type="submit" value="SUBMIT">
-          </form>
+      </div>
+      <br />
+      <div class="getEarlyAccessButton">
+        <input type="submit" value="GET EARLY ACCESS" id="getEarlyAccessButtonId"/>
+      </div>
+    </div>
+    <div class="headerRight">
+      <div class="emailInputAnimatedContainer">
+        <div class="emailInputAnimatedHide dumb">
+          <div class="enterEmail_below">
+            <div class="getEarlyAccess_below"> <p>Get early access</p><br></br>
+            </div>
+            <form action="#" class = "set_to_center" method = "post">
+            <input class="emailInput" type="email" placeholder="you@email.com" autocorrect="off" autocapitalize="off" required="true" style="text-align: left; padding-left:38%">
+            <br>
+            <input id="subscribeBtn" type="submit" value="SUBSCRIBE">
+            </form>
+          </div>
         </div>
       </div>
     </div>
@@ -259,7 +274,7 @@
   <div class="enterEmail_below">
     <div class="getEarlyAccess_below"> <p>Get early access <br></br> </div>
     <form action="#" class = "set_to_center" method = "post">
-      <input class="emailInput" type="email" placeholder="you@email.com" autocorrect="off" autocapitalize="off" required="true" style="text-align: center">
+      <input class="emailInput" type="email" placeholder="you@email.com" autocorrect="off" autocapitalize="off" required="true" style="text-align: left; padding-left:190px">
       <br>
       <input id="subscribeBtn" type="submit" value="SUBSCRIBE">
     </form>
@@ -268,8 +283,6 @@
   <div class = "footer"><footer><span class = "product_name">today</span> APP Inc.2017</footer></div>
 
   <script src="./scripts/main.js"></script>
-  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </body>
 
   </html>

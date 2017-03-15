@@ -7,6 +7,11 @@ body {
   z-index: -2;
 }
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 *{
   box-sizing: border-box;
 }
@@ -149,18 +154,76 @@ body {
 
 .pageHeader {
   width: 100%;
-  height: auto;
+  height: 90%;
   background-color: transparent;
   /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!此兩圖會造成lag!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
   /*background-image: url("../src/backgroundImage.png");*/
   /*background-image: url("../src/backgroundPic.png");*/
   background-image: url("../src/backgroundPic-min.png");
-  background-size: 100%;
-  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  z-index: 20;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: row;
 }
-
+.headerLeft{
+  flex:4;
+}
+.headerRight{
+  flex:3;
+}
 .pageHeaderContent {
   display: flex;
+}
+.getEarlyAccessButton{
+  margin-left: 40%;
+}
+.getEarlyAccessButton > input{
+  width:200px;
+  height:50px;
+  background-color: #FD4D3A;
+  box-shadow: 0px;
+  border-radius: 100px;
+  border: 2px solid #FD4D3A;
+  font-size: 13px;
+  vertical-align: middle;
+  color: white;
+  letter-spacing: 1.7px;
+  outline : none;
+  transition: 0.2s ease-in-out;
+}
+.getEarlyAccessButton > input:hover{
+  transform: scale(1.05);
+  background-color: #FD4D3A;
+  color: #FD4D3A;
+  border: 2px solid #FD4D3A;
+  font-size: 13.5px;
+  color: white;
+  box-shadow: 1px 1px 10px #888888;
+}
+.emailInputAnimatedContainer{
+  width:100%;
+  display: flex;
+  justify-content: flex-end;
+
+}
+.emailInputAnimated{
+  height:50%;
+  width:40%;
+  right: 0px;
+  position: absolute;
+  z-index: 100;
+  background: rgba(250, 250, 250, 0.5);
+  transition: right 2s linear 1s;
+}
+.emailInputAnimatedHide{
+  height:0px;
+  width:0px;
+}
+.hide{
+  height:0px;
+  width:0px;
 }
 /*
 .headerPhoneContainer{
@@ -180,6 +243,7 @@ body {
 .headerContentText {
   flex:2;
   padding-top: 8%;
+
   /*max-width:700px; 加了會導致background pic 被截更多*/
 }
 
@@ -191,12 +255,13 @@ body {
   color: white;
   text-align: left;
   font-weight: bolder;
-  margin: 2% auto 0 18%;
+  margin-left: 30%;
+  margin-top:10%;
 }
 
 .enterEmail {
   width: 100%;
-  height: 100%;
+  height: 200%;
   padding: 5%;
   display: block;
 }
@@ -209,7 +274,7 @@ body {
 .emailInput {
   outline : none;
   background: transparent;
-  width: 600px;
+  width: 500px;
   font-size: 15px;
   border-bottom-width: 2px;
   border-bottom-color: #95989A;
@@ -229,6 +294,7 @@ body {
   padding: 10px;
   height: 50px;
   width:200px;
+  margin-top:10%;
   border-radius: 100px;
   border: 2px solid #FD4D3A;
   background-color: transparent;
@@ -266,7 +332,7 @@ body {
     width:100%;
     height: 700px;
     background: #EBEBEB;
- /*   margin-top: 20%;  討人厭害我debug好久*/
+    margin-top: 45%;
     display: flex;
     flex-direction:row;
 }

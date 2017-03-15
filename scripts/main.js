@@ -1,12 +1,18 @@
 var check01 = document.getElementById("outerCircle01");
 var check02 = document.getElementById("outerCircle02");
 var check03 = document.getElementById("outerCircle03");
+var pc = document.getElementById("play_music");
 
 var count = 0;
+var state = -1;
 
 check01.addEventListener("click", toggle);
+check01.addEventListener("click", selector);
 check02.addEventListener("click", toggle);
+check02.addEventListener("click", selector);
 check03.addEventListener("click", toggle);
+check03.addEventListener("click", selector);
+pc.addEventListener("click",selector);
 
 function toggle () {
     var checkId = this.attributes["data-circle"].value;
@@ -41,23 +47,44 @@ function toggle () {
     }
 }
 
+function selector(){    /*WORD REPLACE*/
+
+    //console.log(this);
+    if(count > 0 && state == -1){
+        state = 0;
+        document.getElementById('fsm').innerHTML = "<h1>ENJOY OUR LITTLE REWARD</h1><p>Great!<br>After finishing an listed event,<br>you will receive a reward you deserved.<br>“Click on the musical note to play music.”<br></p>";
+    }
+    if(count == 1 && state == 0 && this.id == "play_music"){
+        state = 1;
+        document.getElementById('fsm').innerHTML = "<h1>GETTING BETTER</h1><p>Looks like you have got the hang of it.<br>Let’s continue our process!<br>“Finish the following events.”<br></p>";
+    }
+    if(count == 3 && state == 1){
+        state = 2;
+        document.getElementById('fsm').innerHTML = "<h1>LISTEN TO YOUR DAILY BEAT</h1><p>Congratulations!<br>We have finished all the tasks.<br>Let’s relax and enjoy our achievement.<br>“Enjoy the music!”<br></p>";
+    }
+}
+
+var flag = 1;
 var newnode = document.getElementById('nav_experience_design').cloneNode(true);
 var oldnode = document.getElementById('nav_about_contact');
 
 window.onscroll = function(){
     var t = document.documentElement.scrollTop || document.body.scrollTop;
-    if( t > 0 ) {
+    if( t > 0 && flag == 1) {
         document.getElementById('nav_experience_design').className = 'experience_and_design_after';
         newnode.className = 'experience_and_design_after_replace';
         document.getElementById("wrapper").replaceChild(newnode, oldnode);
+        flag = 0;
     }
     if( t == 0){
         document.getElementById("wrapper").replaceChild(oldnode, newnode);
         document.getElementById('nav_experience_design').className = 'experience_and_design';
+        flag = 1;
     }
 }
 
 var play_count = 1;
+
 
 function play(){
     if(count == 1 && play_count == 1){
@@ -83,7 +110,6 @@ function play(){
         play_count = 1;
     }
 }
-
 
 // jquery
 
