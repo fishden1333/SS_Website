@@ -87,6 +87,19 @@ html, body {
   color: #FD4D3A;
 }
 
+@media only screen and (max-width: 800px) {
+  .site-nav > a {
+    margin-left: 30px;
+    text-decoration: none;
+    color: transparent;
+    letter-spacing: 0px;
+  }
+
+  .site-nav > a:hover {
+    color: transparent;
+  }
+}
+
 .blank_space {
   padding-left: 10%;
   padding-top: 3%;
@@ -152,6 +165,30 @@ html, body {
 
 .design_container > a:hover {
   color: #FD4D3A;
+}
+
+@media only screen and (max-width: 800px) {
+  .experience_container > a {
+    text-decoration: none;
+    color: transparent;
+    letter-spacing: 0px;
+    padding-left: 40%;
+  }
+
+  .experience_container > a:hover {
+    color: transparent;
+  }
+
+  .design_container > a {
+    text-decoration: none;
+    color: transparent;
+    letter-spacing: 0px;
+    padding-right: 40%;
+  }
+
+  .design_container > a:hover {
+    color: transparent;
+  }
 }
 
 .pageHeader {
@@ -312,7 +349,7 @@ html, body {
   .slogan {
     letter-spacing: 3px;
     line-height: 150%;
-    font-size: 45px;
+    font-size: 40px;
     font-weight: 500;
     /*color: #454545;*/
     color: white;
@@ -386,6 +423,17 @@ html, body {
   font-weight: lighter;
   line-height: 40px;
   text-align: center;
+}
+
+@media only screen and (max-width: 800px) {
+  .rightPartContainer > .title > p{
+    color: #454545;
+    font-size: 1.2rem;
+    word-spacing: 3px;
+    font-weight: lighter;
+    line-height: 40px;
+    text-align: center;
+  }
 }
 
 .instrument_icon_container{
@@ -553,6 +601,29 @@ html, body {
     margin-left: 10%;
     padding-bottom: 10%;
   }
+
+  .todo01unchecked{
+    font-size:15px;
+    margin:0px;
+    font-weight:200;
+    color: #454545;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-bottom:20%;
+    height: 30px;
+  }
+
+  .todo01checked{
+    font-size:15px;
+    margin:0px;
+    font-weight:200;
+    color: #454545;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-bottom:20%;
+    text-decoration: line-through;
+    height: 30px;
+  }
 }
 
 .hide{
@@ -614,13 +685,22 @@ html, body {
   padding: 25%;
 }
 
+@media only screen and (max-width: 800px) {
+  .titleBox > h1{
+    font-size: 30px;
+    color: white;
+    margin: 0px;
+    padding: 25%;
+  }
+}
+
 .titleContent{
   flex:10;
   padding-left: 2%;
   padding-bottom: 50px;
 }
 
-.titleContent > h1{
+.Content > h1{
   padding: 0px;
   margin: 0px;
   margin-left: 2%;
@@ -662,6 +742,18 @@ html, body {
 
 .questions{
   flex:5;
+}
+
+@media only screen and (max-width: 800px) {
+  .questions > h1{
+    font-size: 20px;
+    height: 80px;
+    color: #535252;
+    padding-left: 0%;
+    padding-top: 5px;
+    margin-top:0px;
+    font-weight: 400;
+  }
 }
 /*
 .lines{
@@ -722,7 +814,16 @@ html, body {
 font-family: 'adobe-garamond-pro';
 font-weight: lighter;
 font-style: italic;
-font-size:45px;
+font-size: 45px;
+}
+
+@media only screen and (max-width: 800px) {
+  .quote > h1{
+    font-family: 'adobe-garamond-pro';
+    font-weight: lighter;
+    font-style: italic;
+    font-size: 25px;
+  }
 }
 
 .quote :nth-child(2){
@@ -815,6 +916,12 @@ font-size:45px;
 .money{
   flex:1;
   text-align: center;
+}
+
+@media only screen and (max-width: 800px) {
+  .experience02secondIconContainer > div > h1{
+    font-size: 15px;
+  }
 }
 
 .experience02secondIconContainer > div > img{
@@ -1014,6 +1121,11 @@ input.placeholder{
   font-size: 25px;
   font-weight: lighter;
   text-align: center;
+}
+@media only screen and (max-width: 800px) {
+  .getEarlyAccess_below > input{
+    padding-left:200px;
+  }
 }
 
 .footer{
