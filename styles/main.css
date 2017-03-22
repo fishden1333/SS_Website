@@ -167,6 +167,32 @@ html, body {
   color: #FD4D3A;
 }
 
+.experience_container_spy{
+  flex: 1;
+}
+
+.experience_container_spy > a {
+  text-decoration: none;
+  color: #FD4D3A;
+  transition: 0.3s ease;
+  letter-spacing: 3px;
+  padding-left: 40%;
+  font-weight: bold;
+}
+
+.design_container_spy{
+  flex: 1;
+}
+
+.design_container_spy > a {
+  text-decoration: none;
+  color: #FD4D3A;
+  transition: 0.3s ease;
+  letter-spacing: 3px;
+  padding-right: 40%;
+  font-weight: bold;
+}
+
 @media only screen and (max-width: 800px) {
   .experience_container > a {
     text-decoration: none;

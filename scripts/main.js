@@ -14,6 +14,13 @@ check03.addEventListener("click", toggle);
 check03.addEventListener("click", selector);
 pc.addEventListener("click",selector);
 
+// window.addEventListener("scroll", scroll);
+
+// function scroll(){
+//     var el = $(window).scrollTop();
+//     console.log(el);
+// }
+
 function toggle () {
     var checkId = this.attributes["data-circle"].value;
     var todoId = this.attributes["data-todo"].value;
@@ -67,6 +74,7 @@ function selector(){    /*WORD REPLACE*/
 var flag = 1;
 var newnode = document.getElementById('nav_experience_design').cloneNode(true);
 var oldnode = document.getElementById('nav_about_contact');
+newnode.id = 'clone_nav_experience_design';
 
 window.onscroll = function(){
     var t = document.documentElement.scrollTop || document.body.scrollTop;
@@ -81,6 +89,21 @@ window.onscroll = function(){
         document.getElementById('nav_experience_design').className = 'experience_and_design';
         flag = 1;
     }
+    if($(window).scrollTop() < 1500 && flag == 0){
+        var experience_design = document.getElementById('clone_nav_experience_design').childNodes;
+        experience_design[1].className = 'experience_container';
+        experience_design[3].className = 'design_container';
+    }    
+    if($(window).scrollTop() > 1500 &&　$(window).scrollTop() < 4600){
+        var experience_design = document.getElementById('clone_nav_experience_design').childNodes;
+        experience_design[1].className = 'experience_container_spy';
+        experience_design[3].className = 'design_container';
+    }
+    if($(window).scrollTop() > 4600){
+        var experience_design = document.getElementById('clone_nav_experience_design').childNodes;
+        experience_design[1].className = 'experience_container'; 
+        experience_design[3].className = 'design_container_spy';   
+    }    
 }
 
 var play_count = 1;
